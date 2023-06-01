@@ -26,14 +26,13 @@ form h2{
     flex-direction: column;
 }
 .texto-resaltado{
+    font-size: 20px;
     display: block;
     color: red;
-    animation: scale ease-in-out 2s infinite;
+    animation: scale ease-in-out 1.5s infinite;
 }
 @keyframes scale{
-    0% {
-        font-size: 20px;
-    }
+     
     50%{
         font-size: 22px;
     }
