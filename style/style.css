@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+/*stylos del header logo barra de navegacion*/
+.conteiner-header{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    height: 100px;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    align-content: center;
+    position: sticky;
+    top: 0;
+}
+
+.header--logo__img{
+    width: 250px;
+}
+.header__nav--conten{
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+.items-nav{
+    display: inline-block;
+    padding: 3px 10px 3px 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/*ACTIVE ITEMS hover*/
+.items-nav:hover{
+    color: red;
+}
+#items-active{
+    color: white;
+    border-bottom: 2px solid red;
+    border-top: 2px solid red;
+}
+
+
+/*Stylos del main*/
+
+.main-slider{
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    transition: all 2s ease-out;
+}
+.main--slider__redes{
+    position: absolute;
+    right: 15px;
+    top: 120px;
+    display: flex;
+    flex-direction: column;
+}
+.redes{
+    width: 40px;
+    margin: 5px;
+}
+
+#slider-img{
+    width: 100%;
+}
+.slider-btn{
+    position: absolute;
+    width: 95%;
+    font-size: 50px;
+    color:white;
+}
+.fa-chevron-right{  
+    position: absolute;
+    right: 2px;
+}
+.main-mapa{
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main--mapa__description{
+    text-align: center;
+    width: 80%;
+}
+.main--mapa__description h3{
+    font-size: 35px;
+    margin-bottom:.5em ;
+}
+.main--mapa__conten{
+    width: 100%;
+    height: 450px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#mapa{
+    width: 90%;
+    height: 100%;
+}
+/*stylos del footer*/
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+}
+.conten-footer{
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+
+/*trabajaremos con la parte responsive de la pagina home*/
+@media screen and (max-width:600px){
+    .conteiner-header{
+        height: 70px;
+        position:static ;
+    }
+    .header__nav--conten{
+        display: none;
+    }
+    .main-slider{
+    position: static;
+    height: auto;
+    background-color: red;
+    margin: 0;
+ }
+ .main--slider__redes{
+    right: 15px;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+}
+ .redes{
+    width: 20px;
+    margin: 2px;
+}
+.slider-btn{
+    font-size: 20px;
+}
+.main-mapa{
+    padding: 1em;
+}
+.main--mapa__description{
+    width: 100%;
+}
+.main--mapa__conten{
+    height: 200px;
+}
+#mapa{
+    width: 100%;
+    height: 100%;
+}
+}

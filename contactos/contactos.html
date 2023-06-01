@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLAIA - CONTACTOS</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="style-contactos.css">
+    <link rel="icon" href="/img/iconos/icono.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/11a7ca8e38.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="conteiner-header">
+            <div class="header-logo">
+                <h1>
+                  <a href="index.html">
+                      <img src="/img/logo.jpg" alt="OLAIA SUPPLY MOTORS - LOGO" class="header--logo__img" >
+                  </a>
+                </h1>
+              </div>
+              <div class="header-nav">
+                <nav class="header__nav--conten">
+                   <ul>
+                      <a href="/index.html">
+                          <li class="items-nav " >Inicio</li>
+                      </a>
+                      <a href="">
+                          <li class="items-nav">Vehículos En Venta</li>
+                      </a>
+                      <a href="">
+                          <li class="items-nav">Sobre Nosotros</li>
+                      </a>
+                      <a href="">
+                          <li class="items-nav" id="items-active">Contactos</li>
+                      </a>               
+                   </ul>
+                </nav>
+              </div>
+        </div>    
+    </header>
+    <main class="main-contactos">
+     <section class="contactos">
+        <div class="contactos-title">
+            <h2>Contáctanos y encuentra tu próximo vehículo: <strong class="texto-resaltado"> ¡Convierte tus sueños en realidad! </strong> </h2>
+        </div>
+        
+        <form class="formulario-contactos">
+             <h2>Formulario de Contacto</h2>
+            <label for="name">Nombre y Apellido</label>
+            <input type="text" name="name" placeholder="Nombre y Apellido" id="name" class="input-text">
+            <label for="email">Correo</label>
+            <input type="email" name="Correo" placeholder="alias@dominio.com" id="email" class="input-text">
+            <label for="tel">Telefono</label>
+            <input type="tel" name="tel" placeholder="(xxx) xxx-xxxx" id="tel" class="input-text">
+            <textarea class="comentario"></textarea>
+            <p>Como te gustaría que te contactemos</p>
+            <label for="correo">Correo</label>
+            <input type="radio" id="correo" name="contactar-via">
+            <label for="telefono">Telefono</label>
+            <input type="radio" id="telefono" name="contactar-via" checked>
+            
+            <button id="submit">Enviar</button>
+
+
+        </form>
+     </section>
+    </main>
+    <footer>
+     <div class="conten-footer">
+        <img src="/img/logo.jpg" alt="logo" class="header--logo__img">
+        <p>&copy; Copyright 2023 OLAIA SUPPLY MOTORS. Todos los derechos reservados</p>
+     </div>
+    </footer>
+
+</body>
+</html>
