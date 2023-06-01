@@ -1,6 +1,6 @@
 .contactos{
     width: 100%;
-    height:600px ;
+    height:700px ;
     padding: 2em;
 }
 .contactos-title{
@@ -19,6 +19,11 @@ form h2{
     height: 40px;
     display: block;
     margin-bottom: 1.5em;
+}
+.elegir-contacto{
+    margin: 10px 0 5px 0;
+    display: flex;
+    flex-direction: column;
 }
 .texto-resaltado{
     display: block;
@@ -43,6 +48,23 @@ form h2{
     padding: 10px;
     resize: none;
 }
+.text--elegir__contacto{
+    font-weight: 600;
+    color: red;
+}
+.elegir-radio{
+    font-size: 18px;
+    font-weight: 500;
+    width: 120px;
+    display:grid;
+    grid-template-columns:80% 15% ;
+    padding: 5px;
+}
+label{
+    font-size: 18px;
+}
 #submit{
     display: block;
+    width: 200px;
+    height: 40px;
 }
