@@ -8,16 +8,52 @@
 header{
     position: sticky;
     top: 0;
+    z-index: 999;
 }
+.contenBtn-mobile{
+    display: inline-block;
+    position:fixed;
+    bottom: 0px;
+    right: 0;
+    margin: 1em;
+    padding: 5px;
+}
+/******** stylos para el button mobile******/
+.mobile-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: black;
+    transition: all ease .5s;
+}
+.lineas-btn{
+    width: 60%;
+    height: 4px;
+    background-color: red;
+    margin: 1px;
+}
+.active-btn .linea1{
+    display: none;
+}
+.active-btn .linea2{
+    rotate: -50deg;
+}
+
+.active-btn .linea3{
+    rotate: 50deg;
+}
+/**  logo de la pigina **/
 .conteiner-header{
     width: 100%;
     background-color: rgb(0, 0, 0);
     height: 100px;
-    display: grid;
-    grid-template-columns: 25% 75%;
+    display: flex;
     align-content: center;
-    position: sticky;
-    top: 0;
 }
 
 .header--logo__img{
@@ -146,7 +182,6 @@ footer{
     }
     .header-logo{
         width: 100%;
-        background-color: aqua;
     }
     .header--logo__img{
        width: 100px;

@@ -18,3 +18,9 @@ function sliderImagenes(){
 }
 
 setInterval(sliderImagenes, 3000)
+
+const btn = document.querySelector(".mobile-btn")
+
+btn.addEventListener('click', ()=>{
+   btn.classList.toggle("active-btn")
+})
