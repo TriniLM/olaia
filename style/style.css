@@ -209,10 +209,14 @@ footer{
         width: 100%;
         height: 100vh;
         z-index: 997;
+        -moz-transform:translateY(-100vh) ;
+        -webkit-transform: translateY(-100vh);
         transform:translateY(-100vh);
         transition: all ease-in-out 0.7s;
     }
     .nav-active{  
+        -moz-transform:translateY(0vh) ;
+        -webkit-transform: translateY(0vh);
         transform:translateY(0vh);      
     }
     .header__nav--conten ul{
