@@ -11,11 +11,11 @@ header{
     z-index: 999;
 }
 .contenBtn-mobile{
-    display: inline-block;
+    display: none;
     position:fixed;
-    bottom: 0px;
+    bottom: 150px;
     right: 0;
-    margin: 1em;
+    margin: 5px;
     padding: 5px;
 }
 /******** stylos para el button mobile******/
@@ -28,25 +28,33 @@ header{
     justify-content: center;
     align-items: center;
     border: none;
-    background-color: black;
-    transition: all ease .5s;
+    background-color: red;
+    transition: all ease-in-out 3s ;
 }
 .lineas-btn{
     width: 60%;
     height: 4px;
-    background-color: red;
+    background-color:black;
     margin: 1px;
+    transition:all ease-in-out 0.3s;
 }
 .active-btn .linea1{
-    display: none;
+    transition:all ease-in-out 0.2s;
+    opacity: 0;
 }
 .active-btn .linea2{
-    rotate: -50deg;
+    position: absolute;
+    transition:all ease-in-out 0.3s;
+    transform: rotate(-50deg);
 }
 
 .active-btn .linea3{
-    rotate: 50deg;
+    position: absolute;
+    transition: all ease-in-out 0.3s;
+    transform: rotate(50deg);
 }
+
+
 /**  logo de la pigina **/
 .conteiner-header{
     width: 100%;
@@ -177,17 +185,23 @@ footer{
 /*trabajaremos con la parte responsive de la pagina home*/
 @media screen and (max-width:600px){
     .conteiner-header{
-        height: 50px;
+        height: 80px;
         display: flex;
     }
     .header-logo{
         width: 100%;
+        display: flex;
+        justify-content: center;
     }
     .header--logo__img{
-       width: 100px;
+       width: 150px;
+       margin: auto auto;
     }
     .header__nav--conten{
         display: none;
+    }
+    .contenBtn-mobile{
+        display: inline-block;
     }
     .main-slider{
     position: static;
