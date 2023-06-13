@@ -60,21 +60,35 @@ header{
 /**  logo de la pigina **/
 .conteiner-header{
     width: 100%;
-    background-color: red;
-    height: 100px;
-    display: flex;
-    align-content: center;
+    background-color: black;
+    max-height: 100px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-content:center;
+    justify-items: left;
+    overflow: hidden;
+    padding: 10px;
 }
-
+.header-logo{
+    display:flex;
+    justify-content:right;
+    align-items:center;
+}
 .header--logo__img{
     width: 250px;
+}
+.header-nav{
+    width: 100%;
 }
 .header__nav--conten{
     height: 100%;
     padding: 50px;
     display: flex;
-    justify-content: right;
     align-items: center;
+}
+.header__nav--conten ul{
+    width: 100%;
+    text-align: right;
 }
 a{
     text-decoration: none;
@@ -104,13 +118,17 @@ main{
 }
 .main-slider{
     width: 100%;
-    height: 600px;
+    height: auto;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
     align-items: center;
     transition: all 2s ease-out;
+    background-color: rebeccapurple;
+}
+#slider-img{
+    width: 100%;
 }
 .main--slider__redes{
     position: absolute;
@@ -124,9 +142,7 @@ main{
     margin: 5px;
 }
 
-#slider-img{
-    width: 100%;
-}
+
 .slider-btn{
     position: absolute;
     width: 95%;
@@ -187,10 +203,10 @@ footer{
 /*trabajaremos con la parte responsive de la pagina home*/
 @media screen and (max-width:600px){
     .conteiner-header{
-        background-color:red;
         height: 80px;
         display: flex;
         z-index: 999;
+        padding: 0px;
     }
     .header-logo{
         background-color: black;
@@ -198,6 +214,7 @@ footer{
         display: flex;
         justify-content: center;
         z-index: 998;
+       
     }
     .header--logo__img{
        width: 150px;
@@ -239,6 +256,7 @@ footer{
     height: auto;
     margin: 0;
  }
+
  .main--slider__redes{
     right: 15px;
     top: 80px;
